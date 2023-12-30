@@ -1,0 +1,90 @@
+.contactCard {
+  width: 100%;
+  height: 3.5em;
+  padding: 0 10px;
+  background: #101010;
+  border-radius: 5px;
+  border: 1px solid #525252;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.5s;
+}
+.light .contactCard {
+  background: #ddd;
+  border: none;
+  box-shadow: 0 0.1em 0.3em #727272;
+}
+.contactCard:hover {
+  transition: 0.5s;
+  border: none;
+  background: #525252;
+}
+.light .contactCard:hover {
+  background: #aeaeae;
+}
+.contactCard i {
+  font-size: 25px;
+  margin-right: 10px;
+}
+.contactCard h2 {
+  color: #fff;
+  font-weight: 100;
+  font-size: 18px;
+}
+.light .contactCard h2 {
+  color: #101010;
+}
+.contactCard h4 {
+  color: #dcdcdc;
+  font-weight: 100;
+  font-size: 12px;
+}
+.light .contactCard h4 {
+  color: #525252;
+}
+#detailBtn {
+  padding: 5px 20px;
+  border-radius: 7px;
+  border: none;
+  color: #fff;
+  font-weight: 200;
+  font-size: 13px;
+  background: #0d82f0;
+}
+#detailBtn:hover {
+  color: #0d82f0;
+  background: none;
+  border: 1px solid #0d82f0;
+}
+.col1,
+.col2,
+.col3 {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+/* Responsiveness */
+@media (max-width: 429px) {
+  .contactCard {
+    height: 8em;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contactCard a {
+    display: none;
+  }
+  .col1 {
+    width: 100%;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid #525252;
+  }
+  .col1 h2 {
+    font-size: 30px;
+  }
+  .col2 h4 {
+    font-size: 20px;
+    color: #fff;
+  }
+}

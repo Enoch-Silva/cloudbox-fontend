@@ -1,0 +1,17 @@
+.detalhe {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contactData {
+  width: 40%;
+}
+/* Responsiveness */
+@media (max-width: 429px) {
+  .contactData {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

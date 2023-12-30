@@ -1,0 +1,292 @@
+.detailCard {
+  width: 100%;
+  height: auto;
+  padding: 0 10px;
+  background: #101010;
+  border-radius: 7px;
+  border: 1px solid #525252;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+.light .detailCard {
+  background: #ddd;
+}
+.left {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.left i {
+  font-size: 100px;
+  margin-top: 30px;
+  color: #525252;
+}
+.infoNumber,
+.infoEmail {
+  display: flex;
+  gap: 10px;
+}
+
+.right {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+}
+.right i {
+  font-size: 25px;
+  color: #525252;
+}
+.text h4 {
+  font-weight: 100;
+  color: #a9a8a8;
+}
+.light .text h4 {
+  color: #191919;
+}
+.text h1 {
+  font-weight: 100;
+}
+.actions {
+  display: flex;
+  align-items: center;
+}
+.actions button i {
+  font-size: 10px;
+}
+#editBtn {
+  padding: 5px 20px;
+  border-radius: 3px;
+  border: none;
+  color: #000;
+  font-size: 13px;
+  font-weight: 200;
+  background: #f0d90d;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#editBtn:hover {
+  color: #f0d90d;
+  background: none;
+  border: 1px solid #f0d90d;
+}
+.light #editBtn {
+  border: 1px solid #525252;
+}
+.light #editBtn:hover {
+  color: #000;
+}
+#deleteBtn {
+  margin-left: 10px;
+  padding: 5px 20px;
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 200;
+  background: #f00d0d;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#deleteBtn:hover {
+  color: #f00d0d;
+  background: none;
+  border: 1px solid #f00d0d;
+}
+#backBtn {
+  color: #0d82f0;
+}
+
+/* delete Modal */
+.deleteModalOverlay {
+  background: transparent;
+  backdrop-filter: blur(25px);
+  background-color: rgba(100, 100, 100, 0.4);
+  background-blend-mode: color;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+}
+.deleteModalContent {
+  margin-top: 30px;
+  width: 90%;
+  height: 8em;
+  max-width: 500px;
+  background: #191919;
+  border-radius: 5px;
+  border: 1px solid #525252;
+  box-shadow: 0 0 0.9em rgba(82, 82, 82, 0.5);
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+}
+.light .deleteModalContent {
+  background: #eee;
+}
+.delContent {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.modalTop h2 {
+  font-size: 20px;
+}
+.modalDown {
+  width: 100%;
+  height: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.message {
+  width: 100%;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+}
+.message p {
+  color: greenyellow;
+  margin-bottom: 10px;
+}
+.light .message p {
+  color: #288d00;
+}
+.buttons {
+  width: 100%;
+  height: 3em;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+#confirmYes {
+  width: 5em;
+  height: 2em;
+  color: #fff;
+  background: green;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 0.4em rgba(197, 197, 197, 0.5);
+}
+#cancelBtn {
+  width: 5em;
+  height: 2em;
+  margin-left: 10px;
+  color: #fff;
+  background: #016cca;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 0.4em rgba(197, 197, 197, 0.5);
+}
+#backLink {
+  font-size: 13px;
+  padding: 5px 15px;
+  color: #fff;
+  background: none;
+  border-radius: 5px;
+  border: 1px solid #525252;
+}
+.light #backLink {
+  color: #000;
+}
+/* update modal */
+.formUp {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+.formDown {
+  width: 100%;
+  height: 25%;
+  padding: 0 20px;
+  border-top: 1px solid #525252;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.image {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image i {
+  margin-top: 20px;
+  font-size: 100px;
+  color: #525252;
+}
+.inputs {
+  width: 70%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#name {
+  width: 100%;
+}
+#addForm {
+  height: 19em;
+  justify-content: space-between;
+}
+#backEdit {
+  font-size: 12px;
+  color: #fff;
+  padding: 13px 90px;
+  background: #0d82f0;
+  border: none;
+  border-radius: 5px;
+}
+/* Responsiveness */
+@media (max-width: 429px) {
+  .detailCard {
+    width: 90%;
+    height: 20rem;
+  }
+  .text h1 {
+    font-weight: 500;
+    margin: 1rem 0;
+  }
+  .infoNumber {
+    height: 3rem;
+    align-items: center;
+    border-top: 1px solid #525252;
+  }
+  #updateModal {
+    height: 70%;
+  }
+  .formUp {
+    flex-direction: column;
+    align-items: center;
+  }
+  .inputs {
+    width: 100%;
+    align-items: center;
+  }
+  #addForm {
+    flex-direction: column;
+    height: auto;
+  }
+  .formDown {
+    flex-direction: column;
+    padding: 20px 20px;
+  }
+  #backEdit {
+    font-size: 23px;
+    padding: 13px 7.7rem;
+  }
+}

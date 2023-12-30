@@ -1,0 +1,50 @@
+@font-face {
+  font-family: Rethink;
+  src: url(assets/fonts/RethinkSans-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Rethink;
+}
+
+body {
+  background: #000;
+  color: #eee;
+}
+
+.light body {
+  background: #eee;
+  color: #000;
+}
+
+p {
+  color: #cfcfcf;
+}
+
+.light p {
+  color: #191919;
+}
+
+a {
+  text-decoration: none;
+  color: #cfcfcf;
+}
+
+.light a {
+  color: #191919;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.light a:hover {
+  color: #363636;
+}
+
+ul li {
+  list-style: none;
+}
